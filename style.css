@@ -45,7 +45,7 @@ button {
 */
 #container {
   max-width: 400px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* Step 6: Select div elements with class of alert and give it:
@@ -96,10 +96,10 @@ button {
   - Background color of #d20d38 if inside div element with danger class
   - Background color of #e8ac00 if inside div element with warning class
 */
-danger .alert__container {
+danger .alert__container::before {
   background-color: #d20d38;
 }
-warning .alert__container {
+warning .alert__container::before {
   background-color: #e8ac00;
 }
 
@@ -138,7 +138,7 @@ button[disabled] {
 */
 /* button[class = 'info'] {
   color:  #0090d7*/
-  button.info {
+  button[class = "info"] {
     color: #0090d7;
   }
   button[class = 'danger'] {
